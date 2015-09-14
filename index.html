@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+
+        .DemoWidget{
+            height: 400px;
+        }
+
+    </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+    <body>
+
+    <div class='DemoWidget' id="line"></div>
+    <div class='DemoWidget' id="map"></div>
+    <div class='DemoWidget' id="bar"></div>
+    <div class='DemoWidget' id="pie"></div>
+
+    <script src="js-libs/echarts-all.js"></script>
+    <script src="echarts-glicloud-theme.js"></script>
+    <script src="them-build-kit.js"></script>
+
+    <script src="demo-options/line-option.js"></script>
+    <script src="demo-options/map-option.js"></script>
+    <script src="demo-options/bar-option.js"></script>
+    <script src="demo-options/pie-option.js"></script>
+
+    <script>
+
+        mountEchart({
+            domID: 'line',
+            echartOption: lineOption,
+            theme: gliaCloudTheme
+        });
+
+        mountEchart({
+            domID: 'map',
+            echartOption: mapOption,
+            theme: gliaCloudTheme
+        });
+
+        mountEchart({
+            domID: 'bar',
+            echartOption: barOption,
+            theme: gliaCloudTheme
+        });
+
+        mountEchart({
+            domID: 'pie',
+            echartOption: pieOption,
+            theme: gliaCloudTheme
+        });
+
+    </script>
+
+
+    </body>
+</html>
